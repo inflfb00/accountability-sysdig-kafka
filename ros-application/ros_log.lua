@@ -52,9 +52,7 @@ function on_init()
 	
 	-- Set settings filter
     chisel.set_filter(config.filter)
-
-
-	return true
+return true
 end
 
 -- Event parsing callback
