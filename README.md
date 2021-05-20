@@ -17,3 +17,8 @@ MongoDB (version 4.4.5)
 ```
 ./producer $KAFKA_BROKER:$KAFKA_BROKER_PORT $KAFKA_TOPIC
 ```
+# Example
+Having an Apache Kafka broker node with name kafka01, with TLS1.3 enable in port 9093 and a topic with name sysdigOutput
+```
+./producer kafka01:9093 sysdigOutput
+```
