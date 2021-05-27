@@ -1,5 +1,4 @@
 config = {
-   capturefiletemplate="./ros_logs/capture.json",
    filter="(" ..
 	"proc.name contains *.py" ..
 	" or proc.name=amcl" ..
