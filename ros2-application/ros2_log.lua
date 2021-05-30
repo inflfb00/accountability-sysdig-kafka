@@ -16,7 +16,7 @@ function on_init()
 	-- Incremental event number
 	evt_num = chisel.request_field("evt.num")
 	-- Event timestamp
-    datetime = chisel.request_field("evt.datetime")
+    	datetime = chisel.request_field("evt.datetime")
 	
 	-- Container id
 	container_id = chisel.request_field("container.id")
@@ -34,21 +34,20 @@ function on_init()
 	user_name = chisel.request_field("user.name")
 
 	-- Name of the event
-    evt_type = chisel.request_field("evt.type")
+    	evt_type = chisel.request_field("evt.type")
 	-- Name of the event
-    evt_arg_data = chisel.request_field("evt.arg.data")
+    	evt_arg_data = chisel.request_field("evt.arg.data")
 
 	-- Capture the first 56000 bytes of each I/O buffer
-    sysdig.set_snaplen(56000)
+    	sysdig.set_snaplen(56000)
 	
 	-- Set settings filter
-    chisel.set_filter(config.filter)
+    	chisel.set_filter(config.filter)
 	return true
 end
 
 -- Event parsing callback
 function on_event()
-
 	-- local variables to fields parsing
 	local evt_num = evt.field(evt_num)
 	local datetime = evt.field(datetime)
