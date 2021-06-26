@@ -21,7 +21,7 @@ config = {
 	" or evt.arg.data contains ERROR" ..
 	" or evt.arg.data contains WARN" ..
 	" or evt.arg.data contains DEBUG" ..
-    " or evt.arg.data contains File" ..
+        " or evt.arg.data contains File" ..
 	" or evt.arg.fd contains :" ..
 	")"
 }return config
