@@ -8,6 +8,13 @@ config = {
 	" or proc.name contains talker" ..
 	" or proc.name=listener)" ..
 	" and (evt.type=write" ..
+	" or evt.type=clone" ..
+	" or evt.type=connect" ..
+	" or evt.type=accept" ..
+	" or evt.type=sendto" ..
+	" or evt.type=setsockopt" ..
+	" or evt.type=recvfrom" ..
+	" or evt.type=execve" ..
 	")" ..
 	" and (" ..
 	" evt.arg.data contains INFO" ..
